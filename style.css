@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&family=Roboto+Condensed:wght@700&family=Work+Sans:wght@800&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+#lateral-bar {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    position: fixed;
+    background-color: aqua;
+    height: 100%;
+    width: 200px;
+}
+
+#middle-sec {
+    margin-left: 200px;
+    background-color: bisque;
+    height: auto;
+}
+
+#menu-top {
+    display: flex;
+    background-color: beige;
+    padding: 50px;
+    height: 400px;
+}
+
+.titulo {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 90px;
+}
+
+#titulo-centro {
+    padding: 20px;
+}
+
+#contato {
+    background-color: black;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Fira Sans Extra Condensed';
+    font-size: 20px;
+}
+
+#info {
+    padding: 50px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.info-block > h2 {
+    font-size: 40px;
+    padding: 30px 80px;
+}
+
+.info-block > ul {
+    font-size: 25px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;    
+    padding-right: 10px;    
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    all:unset;    
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;  
+
+}
