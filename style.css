@@ -1,31 +1,21 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&family=Roboto+Condensed:wght@700&family=Work+Sans:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Fira+Sans+Extra+Condensed:wght@500&family=Roboto+Condensed:wght@700&family=Work+Sans:wght@800&display=swap');
 
 * {
     margin: 0;
 }
 
-#lateral-bar {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-    position: fixed;
-    background-color: aqua;
-    height: 100%;
-    width: 200px;
-}
-
 #middle-sec {
-    margin-left: 200px;
-    background-color: bisque;
+    background-color: #FFF9F9;
     height: auto;
 }
 
 #menu-top {
     display: flex;
-    background-color: beige;
+    background-color: #A031DB;
     padding: 50px;
-    height: 400px;
+    height: 350px;
+    padding-left: 200px;
 }
 
 .titulo {
@@ -35,6 +25,9 @@
 
 #titulo-centro {
     padding: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+    color: #FFF9F9;
 }
 
 #contato {
@@ -42,48 +35,96 @@
     height: 60px;
     color: #fff;
     display: flex;
-    padding-left: 50px;
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Fira Sans Extra Condensed';
     font-size: 20px;
+    padding-left: 150px;
 }
 
 #info {
     padding: 50px;
+    padding-left: 200px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
 .info-block > h2 {
     font-size: 40px;
-    padding: 30px 80px;
+    padding: 30px 10px;
 }
 
 .info-block > ul {
-    font-size: 25px;
+    font-family: 'Fira Sans Condensed';
+    font-size: 20px;
 }
 
 .logo {
     width: 30px;
     height: auto;    
-    padding-right: 10px;    
+    padding-right: 5px;
+    padding-left: 5px;    
+}
+
+#linkedin {
+    width: 40px;
+}
+
+#email {
+    width: 36px;
 }
 
 .logos {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.logos:hover {
+    color: #FF731A;
+}
+
+.estrela1 {
+    width: 25px;
+    margin-left: 10px;
 }
 
 a {
     all:unset;    
 }
 
-img {
-    width: 300px;
+#img-perfil {
+    width: 250px;
     height: auto;
+    box-shadow: 30px 30px rgb(255, 115, 26);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+footer > img {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform ease 350ms;
+}
+
+footer > img:hover {
+    transform: translate(0, -8px);
 }
 
 ul {
-    list-style-type: none;  
+    list-style-type: none;
+    padding-bottom: 15px;
+}
 
+li {
+    display: flex;
+    align-items: center;
+}
+
+li > p {
+    margin-right: 10px;
 }

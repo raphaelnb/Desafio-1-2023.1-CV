@@ -4,54 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Currículo Raphael</title>
 </head>
-<body>
-    <div id="lateral-bar">
-        <div class="titulo">RAPHAEL BRANDÃO</div>
-    </div>
+<body> 
     <section id="middle-sec">
         <div id="menu-top">
             <div>
-                <img src="./foto.png" />
+                <img src="./imagens/foto.png" id="img-perfil" />
             </div>
             <div>
                 <div id="titulo-centro" class="titulo">RAPHAEL NOBRE BRANDÃO</div>
             </div>
         </div>
         <div id="contato">
-            
+            <h3>CONTATO</h3>
             <div class="logos">
-                <img class="logo" src="./github-142-svgrepo-com.svg" alt="">
-                <a href=".">raphaelnb</a>
+                <div onclick="openGit()" >github.com/raphaelnb</div>
             </div>
             <div class="logos">
-                <img class="logo" src="./linkedin-svgrepo-com.svg" alt="">
-                <a href=".">raphaelnbrandao</a>
+                <div onclick="openLinkedin()" >linkedin.com/raphaelnbrandao</div>
             </div>
             <div class="logos">
-                <img class="logo" src="./email-svgrepo-com.svg" alt="">
-                <a href=".">raphael.brandao@engnetconsultoria.com.br</a>
+                <div onclick="mailTo()" >raphael.brandao@engnetconsultoria.com.br</div>
             </div>
         </div>
         <div id="info">
             <div class="info-block">
                 <h2>Formação Acadêmica</h2>
                 <ul>
-                    <li>Graduação em Engenharia de Software – 2021 até o momento</li>
+                    <li><strong>Graduação em Engenharia de Software – 2021 até o momento</strong></li>
                     <li>Universidade de Brasília - UnB</li>
                 </ul>
             </div>
             <div class="info-block">
                 <h2>Experiência Profissional</h2>
                 <ul>
-                    <li>Disaster Accountability Project (OnG) – 02/2023 até o momento</li>
+                    <li><strong>Disaster Accountability Project (OnG) – 02/2023 até o momento</strong></li>
                     <li>Desenvolvedor Front-end</li>
-                    <li>Desenvolvimento do site em Angular14</li>
+                    <li>Desenvolvimento do site em Angular 14</li>
+                </ul>
+                <ul>
+                    <li><strong>EngNet - 05/2023 até o momento</strong></li>
+                    <li>Trainee</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h2>Competências Chave</h2>
+                <ul>
+                    <li>
+                        <p>JavaScript</p>
+                        <img src="./imagens/estrela1.png" class="estrela1" alt="">
+                        <img src="./imagens/estrela1.png" class="estrela1" alt="">
+                    </li>
+                    <li>
+                        React
+                        <img src="./imagens/estrela1.png" class="estrela1" alt="">
+                    </li>
+                    <li>
+                        TypeScript
+                        <img src="./imagens/estrela1.png" class="estrela1" alt="">
+                    </li>
+                    <li>
+                        Angular 14
+                        <img src="./imagens/estrela1.png" class="estrela1" alt="">
+                    </li>
+                    <li>
+                        C/C++
+                        <img src="./imagens/estrela1.png" class="estrela1" alt="">
+                    </li>
                 </ul>
             </div>
         </div>
+        <footer>
+            <img src="./imagens/email.svg" alt="" id="email" class="logo" onclick="mailTo()" >
+            <img src="./imagens/github.svg" class="logo" onclick="openGit()" >
+            <img src="./imagens/linkedin.svg" alt="" id="linkedin" class="logo" onclick="openLinkedin()" >
+        </footer>
     </section>
 </body>
 </html>
